@@ -1,0 +1,31 @@
+[gd_resource type="TileSet" format=3 uid="uid://dqb2vk6bggd65"]
+
+[ext_resource type="Texture2D" uid="uid://b72lpx6j3lcop" path="res://house/ground/CHAO_PRA_MIM_DESENHAR.png" id="1_h8la0"]
+[ext_resource type="Texture2D" uid="uid://6ekeojrnbebb" path="res://house/ground/Madeira_Continua.png" id="2_lc50l"]
+[ext_resource type="Texture2D" uid="uid://b6htxbfb3ng25" path="res://house/ground/Madeira_Linha_canto_E.png" id="3_32c1p"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ywgbf"]
+texture = ExtResource("1_h8la0")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i48h2"]
+texture = ExtResource("2_lc50l")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 16)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lvjjd"]
+texture = ExtResource("3_32c1p")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 16)
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(64, 32)
+sources/0 = SubResource("TileSetAtlasSource_ywgbf")
+sources/1 = SubResource("TileSetAtlasSource_i48h2")
+sources/2 = SubResource("TileSetAtlasSource_lvjjd")
