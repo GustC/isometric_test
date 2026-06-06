@@ -1,0 +1,25 @@
+[gd_resource type="TileSet" format=3 uid="uid://c7xb3uol38txl"]
+
+[ext_resource type="Texture2D" uid="uid://dl7yeelalent8" path="res://ground/Cubo_grandao_alto.png" id="1_pwh4f"]
+[ext_resource type="Texture2D" uid="uid://dscrs871xce5t" path="res://ground/Cubo_grandao_baixo.png" id="2_bkxqu"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_065fg"]
+texture = ExtResource("1_pwh4f")
+texture_region_size = Vector2i(192, 192)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+0:0/0/z_index = 1
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sylqx"]
+texture = ExtResource("2_bkxqu")
+texture_region_size = Vector2i(192, 192)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+0:0/0/z_index = 1
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(192, 96)
+sources/0 = SubResource("TileSetAtlasSource_065fg")
+sources/1 = SubResource("TileSetAtlasSource_sylqx")

@@ -1,0 +1,71 @@
+[gd_scene format=4 uid="uid://du1o8itpyxmg7"]
+
+[ext_resource type="TileSet" uid="uid://dqb2vk6bggd65" path="res://house/ground/house_ground_set.tres" id="1_nxes2"]
+[ext_resource type="TileSet" uid="uid://cc83xs83wv7nu" path="res://house/stairs/house_stairs_set.tres" id="2_q8k63"]
+[ext_resource type="Texture2D" uid="uid://b3qpg3duccrm2" path="res://house/wall/Parede.png" id="3_mkffg"]
+[ext_resource type="Texture2D" uid="uid://b3sb583xfcost" path="res://house/wall/wall-test.png" id="4_jp2re"]
+[ext_resource type="Texture2D" uid="uid://d1417ij0ot2vp" path="res://house/wall/wall-test2.png" id="5_jp2re"]
+[ext_resource type="Texture2D" uid="uid://oi6wv8nv6lmv" path="res://house/wall/wall-test3.png" id="6_ahhpa"]
+[ext_resource type="Texture2D" uid="uid://3rwo5dpodshx" path="res://house/wall/wall-test4.png" id="7_jg0ij"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ahhpa"]
+texture = ExtResource("3_mkffg")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jg0ij"]
+texture = ExtResource("4_jp2re")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eev5h"]
+texture = ExtResource("5_jp2re")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_65n3d"]
+texture = ExtResource("6_ahhpa")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uxrrs"]
+texture = ExtResource("7_jg0ij")
+texture_region_size = Vector2i(64, 128)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, 48)
+
+[sub_resource type="TileSet" id="TileSet_eev5h"]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(64, 32)
+sources/0 = SubResource("TileSetAtlasSource_ahhpa")
+sources/1 = SubResource("TileSetAtlasSource_jg0ij")
+sources/2 = SubResource("TileSetAtlasSource_eev5h")
+sources/3 = SubResource("TileSetAtlasSource_65n3d")
+sources/4 = SubResource("TileSetAtlasSource_uxrrs")
+
+[node name="house" type="Node2D" unique_id=1071447035]
+
+[node name="ground" type="TileMapLayer" parent="." unique_id=1660962666]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAARAAUAAQAAAAAAAAASAAUAAQAAAAAAAAATAAUAAQAAAAAAAAAUAAUAAQAAAAAAAAAVAAUAAQAAAAAAAAARAAEAAQAAAAAAAAARAAIAAQAAAAAAAAARAAMAAQAAAAAAAAARAAQAAQAAAAAAAAASAAEAAQAAAAAAAAASAAIAAQAAAAAAAAASAAMAAQAAAAAAAAASAAQAAQAAAAAAAAATAAEAAQAAAAAAAAATAAIAAQAAAAAAAAATAAMAAQAAAAAAAAATAAQAAQAAAAAAAAAUAAEAAQAAAAAAAAAUAAIAAQAAAAAAAAAUAAMAAQAAAAAAAAAUAAQAAQAAAAAAAAAVAAEAAQAAAAAAAAAVAAIAAQAAAAAAAAAVAAMAAQAAAAAAAAAVAAQAAQAAAAAAAAARAPn/AQAAAAAAAAARAPr/AQAAAAAAAAARAPv/AQAAAAAAAAARAPz/AQAAAAAAAAARAP3/AQAAAAAAAAARAP7/AQAAAAAAAAARAP//AQAAAAAAAAARAAAAAQAAAAAAAAASAPn/AQAAAAAAAAASAPr/AQAAAAAAAAASAPv/AQAAAAAAAAASAPz/AQAAAAAAAAASAP3/AQAAAAAAAAASAP7/AQAAAAAAAAASAP//AQAAAAAAAAASAAAAAQAAAAAAAAATAPn/AQAAAAAAAAATAPr/AQAAAAAAAAATAPv/AQAAAAAAAAATAPz/AQAAAAAAAAATAP3/AQAAAAAAAAATAP7/AQAAAAAAAAATAP//AQAAAAAAAAATAAAAAQAAAAAAAAAUAPn/AQAAAAAAAAAUAPr/AQAAAAAAAAAUAPv/AQAAAAAAAAAUAPz/AQAAAAAAAAAUAP3/AQAAAAAAAAAUAP7/AQAAAAAAAAAUAP//AQAAAAAAAAAUAAAAAQAAAAAAAAAVAPn/AQAAAAAAAAAVAPr/AQAAAAAAAAAVAPv/AQAAAAAAAAAVAPz/AQAAAAAAAAAVAP3/AQAAAAAAAAAVAP7/AQAAAAAAAAAVAP//AQAAAAAAAAAVAAAAAQAAAAAAAAARAPb/AQAAAAAAAAARAPf/AQAAAAAAAAARAPj/AQAAAAAAAAASAPb/AQAAAAAAAAASAPf/AQAAAAAAAAASAPj/AQAAAAAAAAATAPb/AQAAAAAAAAATAPf/AQAAAAAAAAATAPj/AQAAAAAAAAAUAPb/AQAAAAAAAAAUAPf/AQAAAAAAAAAUAPj/AQAAAAAAAAAVAPb/AQAAAAAAAAAVAPf/AQAAAAAAAAAVAPj/AQAAAAAAAAA=")
+tile_set = ExtResource("1_nxes2")
+
+[node name="stair" type="TileMapLayer" parent="." unique_id=1074725854]
+visible = false
+y_sort_enabled = true
+texture_filter = 1
+tile_map_data = PackedByteArray("AAASAP//AgAAAAAAAAATAAEAAQAAAAAAAAATAAMAAQAAAAAAAAAUAAAAAgAAAAAAAAAUAAIAAQAAAAAAAAAUAAQAAAAAAAAAAAAUAPf/BgAAAAAAAAAUAPn/BQAAAAAAAAAUAPv/BAAAAAAAAAAUAP3/AwAAAAAAAAA=")
+tile_set = ExtResource("2_q8k63")
+
+[node name="wall" type="TileMapLayer" parent="." unique_id=81525236]
+z_index = 5
+y_sort_enabled = true
+texture_filter = 1
+position = Vector2(0, -16)
+tile_map_data = PackedByteArray("AAAPAAcAAAAAAAAAAAARAP7/AQAAAAAAAAARAAIAAQAAAAAAAAARAAMAAQAAAAAAAAARAAQAAQAAAAAAAAARAAUAAQAAAAAAAAAVAAUABAAAAAAAAAAVAAQABAAAAAAAAAAVAAMABAAAAAAAAAAVAAIABAAAAAAAAAAVAAEABAAAAAAAAAAVAAAABAAAAAAAAAAVAP//BAAAAAAAAAARAAEAAQAAAAAAAAARAAAAAQAAAAAAAAARAP//AQAAAAAAAAAVAP7/BAAAAAAAAAARAP3/AwAAAAAAAAASAP3/AwAAAAAAAAATAP3/AwAAAAAAAAAUAP3/AwAAAAAAAAAVAP3/AwAAAAAAAAA=")
+tile_set = SubResource("TileSet_eev5h")
